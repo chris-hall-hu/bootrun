@@ -1,0 +1,415 @@
+/* Experiment with fixed backgrounds */
+html {
+  background: url(../images/cogs-bak.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+/* Space out content a bit */
+body {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 17px;
+  color: black;
+  background-color: rgba(255,255,255,0.7);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Allerta', Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  color: #EE7621;
+}
+
+.jumbotron h2 {
+  color: #454545;
+}
+
+/* Make links more accessible */
+a {
+  text-decoration: underline;
+  color: #800080;
+}
+
+.main-container {
+  border-top: 1px solid #666666;
+  border-left: 1px solid #666666;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.main-container a {
+  font-weight: 600;
+}
+
+.main-container h3 a {
+  font-weight: 500;
+}
+
+a:hover, a:focus {
+  color: #0000FF;
+}
+
+a:focus {
+  outline:#4444BB dotted medium;
+}
+
+/* Make muted text AA accessible */
+.text-muted {
+  color: #757575;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Custom breadcrumb styles */
+.breadcrumb {
+  margin-bottom: 7px;
+  margin-top: 7px;
+  background-color: transparent;
+  font-size: 15px;
+  float: none;
+  clear: both;
+}
+
+.breadcrumb li {
+  text-transform: capitalize;
+}
+
+.breadcrumb > li + li:before {
+    color: #858585;
+    content: "/ ";
+    padding: 0 5px;
+}
+
+.breadcrumbcomment {
+  display: inline-block;
+  position: absolute;
+  left: -1000px;
+}
+
+#breadcrumblabel {
+  position: absolute;
+  left: -1000px;
+}
+
+.breadcrumb > .active {
+  color: #333;
+}
+
+/* Custom page header */
+.header { 
+  border-bottom: 1px solid #a5a5a5;
+  border-radius: 12px;
+  margin-bottom: 0px;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+.home-page .header {
+  margin-bottom: 20px;
+}
+
+/* Make h1 for thoughts the same size as h2 everywhere else. */
+.jumbotron h1 {
+  font-size: 30px;
+}
+
+.main-container {
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    background: none;
+  }
+
+  .main-container {
+    border-right: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+  }
+}
+
+@media (max-width: 767px) {
+
+  html {
+    background: none;
+  }
+
+  .header {
+    border: none;
+  }
+
+  .nav-pills li {
+    float: left;
+    clear: both;
+    text-align: left;
+    width: 100%;
+    margin-left: 0px !important;
+    border-radius: 0px;
+  }
+    
+  .top-nav .nav-pills li a {
+    background-color: white;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 0px;
+    border-bottom: 1px solid #a5a5a5;
+  }
+
+  .navbar-collapse.top-nav.collapse.in,
+  .navbar-collapse.top-nav.collapsing
+  { 
+     position: fixed !important;
+     background-color: rgba(200, 200, 100, 0.7);
+     width: 100%;
+     padding-left: 15px;
+     z-index: 10000;
+     padding-top: 40px;
+     margin-left: -25px;
+     padding-bottom: 30px;
+     top: -10px;
+     border: 1px solid #666666;
+     box-shadow: 5px 5px 12px 0px rgba(50, 50, 50, 0.75);
+  }
+
+}
+
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #555;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message */
+.jumbotron {
+  text-align: left;
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #000000;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+
+  .container {
+    max-width: 1000px;
+    width: 99%;
+  }
+
+  /* Marketing message */
+  .contact-page .jumbotron,
+  .thoughts-page .jumbotron,
+  .projects-page .jumbotron,
+  .home-page .jumbotron {
+  	position:relative;       
+        -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;
+        box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;
+  }
+    
+  .contact-page .jumbotron:after,
+  .thoughts-page .jumbotron:after,
+  .projects-page .jumbotron:after,
+  .home-page .jumbotron:after
+  {
+    content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 15px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 15px rgba(0,0,0,0.8);
+    box-shadow:0 0 15px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:80px / 10px;
+    border-radius:80px / 10px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 0px;
+  }
+
+  .home-page .header {
+    margin-bottom: 20px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+  
+}
+
+.jumbotron p {
+  line-height: 1.2;
+  font-size: 17px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 30px 0;
+}
+.marketing p + h4 {
+  margin-top: 18px;
+}
+
+/* Change the nav button active colours etc. */
+.nav-pills > li > a.active, .nav-pills > li > a.active:hover, .nav-pills > li > a.active:focus {
+  background-color: #FFA500;
+  color: #000000;
+  font-family: arial, tahoma, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.nav-pills > li > a {
+  border-radius: 8px;
+  font-family: arial, tahoma, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.nav-pills > li > a:hover, .nav-pills > li > a:focus {
+  background-color: #FFFF66;
+  color: #000000;
+  text-decoration: none;
+}
+
+.widget.html {
+  margin-top: 15px;
+}
+
+/* Custom styles for widget boxes */
+.widget-box {
+  background-color: #eee;
+  padding: 10px;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  border: 1px solid #A0A0A0;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.widget-box .glyphicon {
+  top: 3px;
+}
+
+/* Button overrides */
+.btn-default {
+  background-color: #FFFF66;
+  font-weight: bold;
+}
+
+.btn-default:hover {
+  background-color: #FFA500;
+}
+
+/* Navigation */
+.navbar-toggle .icon-bar {
+  background-color: #000000;
+}
+
+.navbar-toggle {
+  background-color: yellow;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 20000;
+  right: 10px;
+  margin-top: 0px;
+}
+
+/* Forms */
+.form-control:focus {
+  border-color: orange;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 140, 0, 0.6);
+}
+
+/* Comments */ 
+article.comment {
+  border-bottom: 1px solid #000000;
+}
+
+#comment-section article {
+  background-color: #E0E080;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+ckground-color: #FFFF66;
+  font-weight: bold;
+}
+
+.btn-default:hover {
+  background-color: #FFA500;
+}
+
+/* Navigation */
+.navbar-toggle .icon-bar {
+  background-color: #000000;
+}
+
+.navbar-toggle {
+  background-color: yellow;
+  border-radius: 10px;
+}
+
+/* Forms */
+.form-control:focus {
+  border-color: orange;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 140, 0, 0.6);
+}
+
+/* Comments */ 
+article.comment {
+  border-bottom: 1px solid #000000;
+}
+
+#comment-section article {
+  background-color: #E0E080;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+aside .glyphicon {
+  font-size: 20px;
+}
+

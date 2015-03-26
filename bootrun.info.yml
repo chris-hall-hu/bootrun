@@ -1,0 +1,28 @@
+name: Boot Run
+type: theme
+description: 'A simple bootstrap theme hack for the running on Drupal 8 site.'
+package: Core
+version: '8.0.0-alpha1'
+core: 8.x
+libraries:
+  - bootrun/global-styling
+  - bootrun/global-scripts
+stylesheets-remove:
+  - views.module.css
+ckeditor_stylesheets:
+  - css/base/elements.css
+  - css/components/captions.css
+  - css/components/content.css
+  - css/components/table.css
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  jumbotron: Jumbotron
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar: 'Sidebar'
+  footer: footer
+
