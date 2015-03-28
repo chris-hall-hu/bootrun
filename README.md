@@ -24,3 +24,16 @@ Also it already had lots of things wrong with it, on the original theme.
 
 This may develop into something more interesting depending on which directions
 my experiments go in. 
+
+#Heads up
+
+Things and refinements as I notice theme that could be useful to other started from scratch.
+
+## Admin menu width is defined in rems
+If you want the admin menu to work nice with your new theme then you need to take into account that it's width is measured in rems and is therefore relative to the html font-size (the font-size specified when you inspect your html tag). 
+
+It assumes by default that this will be 16px, but if your are using bootstrap or a theme that uses the trick of setting the font-size on the html element to be 62.5% (because 10px is lot easier to do font-scaling calculations with) then horizontal admin menu will be too thin (doh). 
+
+You either need to set the html font-size to 100% (if that doesn't break anything else) or do some CSS with the width of the #toolbar-item-administration-tray to fix.
+
+
