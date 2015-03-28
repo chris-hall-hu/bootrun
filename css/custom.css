@@ -5,8 +5,8 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-size: 100%;
 }
-
 
 /* Space out content a bit */
 body {
@@ -135,63 +135,6 @@ a:focus {
   border-radius: 8px;
 }
 
-@media screen and (max-width: 1000px) {
-  html {
-    background: none;
-  }
-
-  .main-container {
-    border-right: 1px solid #666666;
-    border-bottom: 1px solid #666666;
-  }
-}
-
-@media (max-width: 767px) {
-
-  html {
-    background: none;
-  }
-
-  .header {
-    border: none;
-  }
-
-  .nav-pills li {
-    float: left;
-    clear: both;
-    text-align: left;
-    width: 100%;
-    margin-left: 0px !important;
-    border-radius: 0px;
-  }
-    
-  .top-nav .nav-pills li a {
-    background-color: white;
-    width: 100%;
-    opacity: 0.9;
-    border-radius: 0px;
-    border-bottom: 1px solid #a5a5a5;
-  }
-
-  .navbar-collapse.top-nav.collapse.in,
-  .navbar-collapse.top-nav.collapsing
-  { 
-     position: fixed !important;
-     background-color: rgba(200, 200, 100, 0.7);
-     width: 100%;
-     padding-left: 15px;
-     z-index: 10000;
-     padding-top: 40px;
-     margin-left: -25px;
-     padding-bottom: 30px;
-     top: -10px;
-     border: 1px solid #666666;
-     box-shadow: 5px 5px 12px 0px rgba(50, 50, 50, 0.75);
-  }
-
-}
-
-
 /* Custom page footer */
 .footer {
   padding-top: 19px;
@@ -209,68 +152,6 @@ a:focus {
   padding-top: 30px;
   padding-bottom: 30px;
   color: #000000;
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-
-  .container {
-    max-width: 1000px;
-    width: 99%;
-  }
-
-  /* Marketing message */
-  .contact-page .jumbotron,
-  .thoughts-page .jumbotron,
-  .projects-page .jumbotron,
-  .home-page .jumbotron {
-  	position:relative;       
-        -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;
-        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;
-        box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;
-  }
-    
-  .contact-page .jumbotron:after,
-  .thoughts-page .jumbotron:after,
-  .projects-page .jumbotron:after,
-  .home-page .jumbotron:after
-  {
-    content:"";
-    position:absolute; 
-    z-index:-1;
-    -webkit-box-shadow:0 0 15px rgba(0,0,0,0.8);
-    -moz-box-shadow:0 0 15px rgba(0,0,0,0.8);
-    box-shadow:0 0 15px rgba(0,0,0,0.8);
-    top:0;
-    bottom:0;
-    left:10px;
-    right:10px;
-    -moz-border-radius:80px / 10px;
-    border-radius:80px / 10px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 0px;
-  }
-
-  .home-page .header {
-    margin-bottom: 20px;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-  
 }
 
 .jumbotron p {
@@ -371,9 +252,6 @@ article.comment {
   margin-left: 10px;
   margin-right: 10px;
 }
-ckground-color: #FFFF66;
-  font-weight: bold;
-}
 
 .btn-default:hover {
   background-color: #FFA500;
@@ -413,3 +291,121 @@ aside .glyphicon {
   font-size: 20px;
 }
 
+
+@media screen and (max-width: 767px) {
+
+  html {
+    background: none;
+  }
+
+  .header {
+    border: none;
+  }
+
+  .nav-pills li {
+    float: left;
+    clear: both;
+    text-align: left;
+    width: 100%;
+    margin-left: 0px !important;
+    border-radius: 0px;
+  }
+    
+  .top-nav .nav-pills li a {
+    background-color: white;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 0px;
+    border-bottom: 1px solid #a5a5a5;
+  }
+
+  .navbar-collapse.top-nav.collapse.in,
+  .navbar-collapse.top-nav.collapsing
+  { 
+     position: fixed !important;
+     background-color: rgba(200, 200, 100, 0.7);
+     width: 100%;
+     padding-left: 15px;
+     z-index: 10000;
+     padding-top: 40px;
+     margin-left: -25px;
+     padding-bottom: 30px;
+     top: -10px;
+     border: 1px solid #666666;
+     box-shadow: 5px 5px 12px 0px rgba(50, 50, 50, 0.75);
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .container {
+    max-width: 1000px;
+    width: 99%;
+  }
+
+  /* Marketing message */
+  .contact-page .jumbotron,
+  .thoughts-page .jumbotron,
+  .projects-page .jumbotron,
+  .home-page .jumbotron {
+  	position:relative;       
+        -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;
+        box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;
+  }
+    
+  .contact-page .jumbotron:after,
+  .thoughts-page .jumbotron:after,
+  .projects-page .jumbotron:after,
+  .home-page .jumbotron:after
+  {
+    content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 15px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 15px rgba(0,0,0,0.8);
+    box-shadow:0 0 15px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:80px / 10px;
+    border-radius:80px / 10px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 0px;
+  }
+
+  .home-page .header {
+    margin-bottom: 20px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+  
+}
+
+
+@media screen and (max-width: 1000px) {
+  html {
+    background: none;
+  }
+
+  .main-container {
+    border-right: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+  }
+}
