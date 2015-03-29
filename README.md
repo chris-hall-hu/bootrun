@@ -27,7 +27,7 @@ my experiments go in.
 
 #Heads up
 
-Things and refinements as I notice theme that could be useful to other started from scratch.
+Things and refinements as I notice them that could be useful to others starting a theme from scratch.
 
 ## Admin menu width is defined in rems
 If you want the admin menu to work nice with your new theme then you need to take into account that it's width is measured in rems and is therefore relative to the html font-size (the font-size specified when you inspect your html tag). 
@@ -37,9 +37,9 @@ It assumes by default that this will be 16px, but if your are using bootstrap or
 You either need to set the html font-size to 100% (if that doesn't break anything else) or do some CSS with the width of the #toolbar-item-administration-tray to fix.
 
 ## Admin menu needs classes from Classy theme
-Starting from a more barebones theme I noticed that the Admin menu is styled wrong, it needs some extra stuff add from Classy (menu.html.twig). 
+Starting from a more barebones theme I noticed that the Admin menu is styled wrong, it needs some extra stuff added from Classy (menu.html.twig). 
 
-You can fix this in a theme that is not a subtheme of Classy by copy the Class menu.html.twig template into your theme as menu--admin.html.twig.
+You can fix this in a theme that is not a subtheme of Classy by copying the Classy menu.html.twig template into your theme as menu--admin.html.twig.
 
 
 
