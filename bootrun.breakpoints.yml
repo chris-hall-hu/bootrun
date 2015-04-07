@@ -1,0 +1,18 @@
+bootrun.mobile:
+  label: mobile
+  mediaQuery: 'all and (max-width: 767px)'
+  weight: 2
+  multipliers:
+    - 1x
+bootrun.narrow:
+  label: narrow
+  mediaQuery: 'all and (min-width: 768px) and (max-width: 999px)'
+  weight: 1
+  multipliers:
+    - 1x
+bootrun.wide:
+  label: wide
+  mediaQuery: 'all and (min-width: 1000px)'
+  weight: 0
+  multipliers:
+    - 1x

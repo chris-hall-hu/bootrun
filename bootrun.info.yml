@@ -9,6 +9,8 @@ libraries:
   - bootrun/global-scripts
 stylesheets-remove:
   - views.module.css
+  - system.module.css
+  - system.theme.css
 ckeditor_stylesheets:
   - css/base/elements.css
   - css/components/captions.css
