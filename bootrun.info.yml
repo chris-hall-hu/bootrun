@@ -2,7 +2,7 @@ name: Boot Run
 type: theme
 description: 'A simple bootstrap theme hack for the running on Drupal 8 site.'
 package: Core
-version: '8.0.0-alpha1'
+version: '8.0.0-beta7'
 core: 8.x
 libraries:
   - bootrun/global-styling
