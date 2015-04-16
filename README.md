@@ -29,6 +29,9 @@ my experiments go in.
 
 Things and refinements as I notice them that could be useful to others starting a theme from scratch.
 
+## Themes can have config also
+I added the yaml config for my repsonsive image styles to this theme (really just as a reminder for when I am doing real themeing), [see this article](http://running-on-drupal8.co.uk/article/drupal8-responsive-breakpoints). 
+
 ## Admin menu width is defined in rems
 If you want the admin menu to work nice with your new theme then you need to take into account that it's width is measured in rems and is therefore relative to the html font-size (the font-size specified when you inspect your html tag). 
 
