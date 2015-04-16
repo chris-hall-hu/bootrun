@@ -1,0 +1,29 @@
+uuid: 6429af42-efef-4b64-9a00-a292633ff9e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large
+    - image.style.medium
+    - image.style.thumbnail
+  theme:
+    - bootrun
+id: article_image
+label: 'Article image'
+image_style_mappings:
+  -
+    breakpoint_id: bootrun.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large
+  -
+    breakpoint_id: bootrun.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: medium
+  -
+    breakpoint_id: bootrun.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: thumbnail
+breakpoint_group: bootrun
