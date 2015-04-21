@@ -29,6 +29,16 @@ my experiments go in.
 
 Things and refinements as I notice them that could be useful to others starting a theme from scratch.
 
+## Some useful css for stripped down themes
+You can remove css style sheets added by modules etc. for example in the theme info.yml
+`
+stylesheets-remove:
+  - views.module.css
+  - system.module.css
+  - system.theme.css
+`
+A few css rules are still really useful to make the admin toolbar work, alignment styles from the CCK WYSIWYG etc. I have started adding these to a drupal_system.css file.
+
 ## Themes can have config also
 I added the yaml config for my repsonsive image styles to this theme (really just as a reminder for when I am doing real themeing), [see this article](http://running-on-drupal8.co.uk/article/drupal8-responsive-breakpoints). 
 
