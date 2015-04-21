@@ -1,7 +1,8 @@
 /**
  * @file
  * Generic styles used in D8 that may be useful when rolling a theme 
- * from scratch.
+ * from scratch. Adding these styles allowed me to remove system.theme.css
+ * and system.module.css
  */
 
 /**
