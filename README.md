@@ -1,5 +1,4 @@
 #Introduction
-
 Early days, this is my first themeing experiment for Drupal 8 and is
 the theme for running-on-drupal8.com on version Beta 7.
 
@@ -16,7 +15,6 @@ the js has been replaced with
 [tagwa/bootstrap-without-jquery](https://github.com/tagawa/bootstrap-without-jquery)
 
 #Going forward
-
 Still a lot more to strip out, and bugs to investigate (which may or may not be
 be Drupally bugs at the moment).
 
@@ -26,8 +24,11 @@ This may develop into something more interesting depending on which directions
 my experiments go in. 
 
 #Heads up
-
 Things and refinements as I notice them that could be useful to others starting a theme from scratch.
+
+## General
+When trying out a new theme install and set as default in one step can be unpredictable, installing and then setting 
+the theme as default in two steps can often be a lot more informatative if there is a problem with the theme.
 
 ## Some useful css for stripped down themes
 You can remove css style sheets added by modules etc. for example in the theme info.yml
@@ -40,7 +41,9 @@ stylesheets-remove:
 A few css rules are still really useful to make the admin toolbar work, alignment styles from the CCK WYSIWYG etc. I have started adding these to a drupal_system.css file.
 
 ## Themes can have config also
-I added the yaml config for my repsonsive image styles to this theme (really just as a reminder for when I am doing real themeing), [see this article](http://running-on-drupal8.co.uk/article/drupal8-responsive-breakpoints). 
+I added the yaml config for my repsonsive image styles to this theme (really just as a reminder for when I am doing real themeing),
+[see this article](http:d//running-on-drupal8.co.uk/article/drupal8-responsive-breakpoints). Note however that setting theme as default 
+will fail if you don't have required module dependencies for the config (as of now the error message is not very specific).
 
 ## Admin menu width is defined in rems
 If you want the admin menu to work nice with your new theme then you need to take into account that it's width is measured in rems and is therefore relative to the html font-size (the font-size specified when you inspect your html tag). 

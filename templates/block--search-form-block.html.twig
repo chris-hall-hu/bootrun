@@ -1,4 +1,3 @@
-{% extends "@classy/search/block--search-form-block.html.twig" %}
 {#
 /**
  * @file
@@ -18,6 +17,6 @@
 #}
 {% block content %}
   <div{{ content_attributes.addClass('content', 'container-inline') }}>
-    {{ parent() }}
+    {{ content }}
   </div>
 {% endblock %}
