@@ -1,5 +1,6 @@
 name: Boot Run
 type: theme
+base theme: sinatra
 description: 'A simple bootstrap theme hack for the running on Drupal 8 site.'
 package: Core
 version: '8.0.0-beta7'
