@@ -7,7 +7,11 @@ The theme shares the same css as my blog personal site chris-david-hall.info
 of Drupal 8. 
 
 This is just for interest, this would not be useful as base theme or for any
-other custom development. 
+other custom development.
+
+This theme relies on [Sinatra](https://github.com/chris-hall-hu/sinatra)(another learning experiment) as a parent theme.
+Sinatra is eventually going to override many of the core Twig templates to provide (Twig Blocks)[http://twig.sensiolabs.org/doc/tags/block.html] that may then
+be extended in child themes.
 
 #Bootstrap based
 Based on Bootstrap 3 at the moment but the css is a little stripped down and 
@@ -38,7 +42,8 @@ stylesheets-remove:
   - system.module.css
   - system.theme.css
 ```
-A few css rules are still really useful to make the admin toolbar work, alignment styles from the CCK WYSIWYG etc. I have started adding these to a drupal_system.css file.
+A few css rules are still really useful to make the admin toolbar work, alignment styles from the CCK WYSIWYG etc. these styles are obtained from
+the parent theme [Sinatra](https://github.com/chris-hall-hu/sinatra)(another learning experiment).
 
 ## Themes can have config also
 I added the yaml config for my repsonsive image styles to this theme (really just as a reminder for when I am doing real themeing),
