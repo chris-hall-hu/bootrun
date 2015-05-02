@@ -2,7 +2,7 @@
 Early days, this is my first themeing experiment for Drupal 8 and is
 the theme for running-on-drupal8.com on version Beta 7.
 
-The theme shares the same css as my blog personal site [chris-david-hall.info](http://chris-david-hall.inf) which runs on ExpressionEngine, which is a testement to the greater ease of de-drupalification
+The theme shares the same css as my blog personal site [chris-david-hall.info](http://chris-david-hall.info) which runs on ExpressionEngine, which is a testement to the greater ease of de-drupalification
 of Drupal 8. 
 
 This is just for interest, this would not be useful as base theme or for any
