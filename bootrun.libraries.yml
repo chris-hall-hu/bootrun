@@ -4,9 +4,7 @@ global-styling:
     theme:
       css/bootstrap/bootstrap.css: {}
       css/custom.css: {}
-      css/drupal_system.css: {}
 global-scripts:
   version: VERSION
   js:
     js/bootstrap-without-jquery.min.js: { scope: footer }
-
