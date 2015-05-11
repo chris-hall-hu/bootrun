@@ -1,0 +1,9 @@
+{% extend '@sinatra/node.html.twig' %}
+  
+{% block label %}  
+  {% if not page %}
+    <h3{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h3>
+  {% endif %}
+{% endblock label %}
