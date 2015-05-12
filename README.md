@@ -9,7 +9,7 @@ This is just for interest, this would not be useful as base theme or for any
 other custom development.
 
 This theme relies on [Sinatra](https://github.com/chris-hall-hu/sinatra)(another learning experiment) as a parent theme.
-Sinatra is eventually going to override many of the core Twig templates to provide (Twig Blocks)[http://twig.sensiolabs.org/doc/tags/block.html] that may then
+Sinatra is eventually going to override many of the core Twig templates to provide [Twig Blocks](http://twig.sensiolabs.org/doc/tags/block.html) that may then
 be extended in child themes.
 
 #Bootstrap based
