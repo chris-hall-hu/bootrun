@@ -42,7 +42,7 @@ A few css rules are still really useful to make the admin toolbar work, alignmen
 
 ## Themes can have config also
 I added the yaml config for my repsonsive image styles to this theme (really just as a reminder for when I am doing real themeing),
-[see this article](http:d//running-on-drupal8.co.uk/article/drupal8-responsive-breakpoints). Note however that setting theme as default 
+[see this article](http://running-on-drupal8.co.uk/article/drupal8-responsive-breakpoints). Note however that setting theme as default 
 will fail if you don't have required module dependencies for the config (as of now the error message is not very specific).
 
 ## Admin menu width is defined in rems
