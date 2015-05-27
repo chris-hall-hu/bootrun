@@ -10,7 +10,7 @@ other custom development.
 
 This theme relies on [Sinatra](https://github.com/chris-hall-hu/sinatra)(another learning experiment) as a parent theme.
 Sinatra is eventually going to override many of the core Twig templates to provide [Twig Blocks](http://twig.sensiolabs.org/doc/tags/block.html) that may then
-be extended in child themes.
+be extended in child themes. Take a look at the difference between the node template in the master branch and the one in chase_head branch.
 
 #Bootstrap based
 Based on Bootstrap 3 at the moment but the css is a little stripped down and 
