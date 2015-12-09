@@ -68,9 +68,9 @@
           </button>
         </div>
         {{ page.primary_menu }}
-        {% if site_name %}
-                <h1 class="text-muted">{{ site_name }}</h1>
-        {% endif %}
+
+                <h1 class="text-muted">{{ site_name }} kzinti</h1>
+
     </header>
     {% if messages %}
       <div id="messages">
@@ -88,7 +88,7 @@
         {% endif %}
       </div>
     {% endif %}
-        
+
     <main id="content" class="column main-container" role="main">
       <section class="section row marketing">
         <div class="{{ page.bootstrap.contentLayout }}">
@@ -103,7 +103,7 @@
             <ul class="action-links">{{ action_links }}</ul>
           {% endif %}
           {{ page.content }}
-    
+
         </div>
         {% if page.sidebar %}
           <div class="column sidebar col-sm-4">

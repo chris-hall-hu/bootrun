@@ -111,7 +111,7 @@ a:focus {
 }
 
 /* Custom page header */
-.header { 
+.header {
   border-bottom: 1px solid #a5a5a5;
   border-radius: 12px;
   margin-bottom: 0px;
@@ -172,9 +172,9 @@ a:focus {
 }
 
 /* Change the nav button active colours etc. */
-.nav-pills > li > a.active,
-.nav-pills > li > a.active:hover,
-.nav-pills > li > a.active:focus {
+.nav-pills > li > a.is-active,
+.nav-pills > li > a.is-active:hover,
+.nav-pills > li > a.is-active:focus {
   background-color: #FFA500;
   color: #000000;
   font-family: arial, tahoma, sans-serif;
@@ -246,7 +246,7 @@ a:focus {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 140, 0, 0.6);
 }
 
-/* Comments */ 
+/* Comments */
 article.comment {
   border-bottom: 1px solid #000000;
 }
@@ -280,7 +280,7 @@ article.comment {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 140, 0, 0.6);
 }
 
-/* Comments */ 
+/* Comments */
 article.comment {
   border-bottom: 1px solid #000000;
 }
@@ -317,7 +317,7 @@ aside .glyphicon {
     margin-left: 0px !important;
     border-radius: 0px;
   }
-    
+
   .top-nav .nav-pills li a {
     background-color: white;
     width: 100%;
@@ -325,17 +325,17 @@ aside .glyphicon {
     border-radius: 0px;
     border-bottom: 1px solid #a5a5a5;
   }
-  
-  .nav-pills li a.active,
-  .nav-pills li a.active:hover,
-  .nav-pills li a.active:focus,
+
+  .nav-pills li a.is-active,
+  .nav-pills li a.is-active:hover,
+  .nav-pills li a.is-active:focus,
   .nav-pills li a:hover {
     background-color: #FFA500;
   }
 
   .navbar-collapse.top-nav.collapse.in,
   .navbar-collapse.top-nav.collapsing
-  { 
+  {
      position: fixed !important;
      background-color: rgba(200, 200, 100, 0.7);
      width: 100%;
@@ -363,17 +363,17 @@ aside .glyphicon {
   .thoughts-page .jumbotron,
   .projects-page .jumbotron,
   .home-page .jumbotron {
-  	position:relative;       
+  	position:relative;
         box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;
   }
-    
+
   .contact-page .jumbotron:after,
   .thoughts-page .jumbotron:after,
   .projects-page .jumbotron:after,
   .home-page .jumbotron:after
   {
     content:"";
-    position:absolute; 
+    position:absolute;
     z-index:-1;
     box-shadow:0 0 15px rgba(0,0,0,0.8);
     top:0;
@@ -404,7 +404,7 @@ aside .glyphicon {
   .jumbotron {
     border-bottom: 0;
   }
-  
+
 }
 
 

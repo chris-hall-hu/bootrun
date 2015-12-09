@@ -1,7 +1,8 @@
-{% extends "@sinatra/html.html.twig" %}
+{% extends "@sinatra/layout/html.html.twig" %}
 
 {% block skip_content %}
   <a href="#main-content" class="sr-only sr-only-focusable">
      {{ 'Skip to main content'|t }}
   </a>
-{% endblock %}
+  {{ parent() }}
+{% endblock skip_content %}

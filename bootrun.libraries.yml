@@ -1,10 +1,10 @@
 global-styling:
-  version: VERSION
+  version: DEV
   css:
     theme:
       css/bootstrap/bootstrap.css: {}
       css/custom.css: {}
 global-scripts:
-  version: VERSION
+  version: DEV
   js:
     js/bootstrap-without-jquery.min.js: { scope: footer }
